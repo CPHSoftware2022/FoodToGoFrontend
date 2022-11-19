@@ -1,9 +1,16 @@
 .container {
   padding: 0 2rem;
-  background-color: #e8f9fd
+  background-color: #acf0ff;
+  animation: color 18s infinite linear;
+
 
 }
-
+@keyframes color {
+  0%   { background: #a4eeff; }
+  40%  { background: #86ddff; }
+  60%  { background: #5edcf8; }
+  100% { background: #4ddeff; }
+}
 .main {
   min-height: 90vh;
   padding: 4rem 0;
@@ -106,7 +113,6 @@
 }
 
 .subtitle {
-  margin: 1;
   line-height: 1.15;
   font-size: 8rem;
   color:#ff8000;

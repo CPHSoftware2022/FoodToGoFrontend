@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import NavigationMenu from './widgets/navigation-menu'
+import NavigationMenu from '../widgets/navigation-menu'
 import { useState,useEffect } from 'react'
 export default function OrderPage() {
   const [orders, setOrders] = useState([
