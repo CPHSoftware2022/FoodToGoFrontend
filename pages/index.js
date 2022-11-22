@@ -33,12 +33,11 @@ export default function Home() {
         </h1>
         <h1 className={styles.subtitle}>Food To Go</h1>
         
-        { item.restaurant_name != null&&
-        <div className={styles.dailyItem}> 
-        
         <h1 className={styles.featuredItem}>Featured Item</h1>
-        
-        <table>
+        {item==null&&<h1 className={styles.featuredItem}>No items to feature</h1>}
+        { item != null&&
+      
+        <table className={styles.table}>
             <thead>
             <tr>
               <th className={styles.th}>Item name</th>
@@ -55,7 +54,6 @@ export default function Home() {
               <td className={styles.td}>{item.phone}</td>
             </tr>
         </table>
-        </div>
 }
         
     
