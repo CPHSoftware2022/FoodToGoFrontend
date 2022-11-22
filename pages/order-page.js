@@ -36,7 +36,7 @@ export default function OrderPage() {
           <tbody>
 
           {orders.map((order) => (
-            <tr>
+            <tr key={order.id}>
               <td className={styles.td}>{order.id}</td>
               <td className={styles.td}>{order.start}</td>
               <td className={styles.td}>{order.end}</td>
