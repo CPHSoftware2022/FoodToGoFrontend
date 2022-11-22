@@ -53,11 +53,14 @@
   text-align: center;
   background-color: #ff8000;
   color: rgb(0, 0, 0);
+  font-size: large;
+
 }
 .td {
   border: 1px solid #ddd;
   padding: 8px;  color: rgb(0, 0, 0);
-
+  background-color: whitesmoke;
+  font-size: large;
 }
 .table {
   border-collapse: collapse;
@@ -88,6 +91,18 @@
   flex-grow: 1;
 }
 
+.featuredItem {
+  font-size: xx-large;
+  font-weight: 600;
+  color: #fafafa;
+  text-shadow: #000 0px 0px 5px;
+  
+}
+
+.dailyItem {
+  text-align: center;
+  align-content: center;
+}
 
 .title {
   margin: 0;
