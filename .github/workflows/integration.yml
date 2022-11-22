@@ -14,5 +14,5 @@ jobs:
       - name: run cypress test
         uses: cypress-io/github-action@v2
         with:
-          start: start-server-and-test start http://localhost:3000 cypress
+          start: npm start
           config-file: cypress.config.js
