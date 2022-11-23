@@ -99,6 +99,14 @@
   
 }
 
+.greeting{
+  font-size: xx-large;
+  font-weight: 600;
+  color: #fafafa;
+  text-shadow: #000 0px 0px 5px;
+  align-items: center;
+  text-align: center;
+}
 
 .title {
   margin: 0;

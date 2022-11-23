@@ -67,9 +67,11 @@ export default function Home() {
         
     
       <div className={styles.block}></div>
-      <h1>Greeting</h1>
-        <h1>{greeting.greeting + ": "+ greeting.language}</h1>
+      {greeting!=null&&<div className={styles.greeting}>
+        <h2>{"Hello or "+greeting.greeting+" in "+greeting.language}</h2>
 
+      </div>
+      }
       </main>
       
 
