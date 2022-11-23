@@ -6,18 +6,27 @@ import { useState,useEffect } from 'react'
 
 export default function Home() {
   const [item, setItem] = useState({});
+  const [greeting, setGreeting] = useState({});
+  
+  const getGreeting = async () => {
+    const res = await fetch('/api/greeting');
+    const data = await res.json();
+    console.log(data);
+    setGreeting(Object.assign({}, data));
+  };
+  
+  const fetchItem = async () => {
+    const res = await fetch('/api/connectToSQL');
+    const data = await res.json();
+    setItem(data[0]);
+    console.log(data);
+  };
 
   useEffect(() => {
-    const fetchItem = async () => {
-      const res = await fetch('/api/connectToSQL');
-      const data = await res.json();
-      setItem(data[0]);
-      console.log(data);
-    };
-    return () => {
-      fetchItem();
-    };
+    getGreeting();
+    fetchItem();
   }, []);
+
 
   return (
     <div className={styles.container}>
@@ -58,7 +67,9 @@ export default function Home() {
         
     
       <div className={styles.block}></div>
-        
+      <h1>Greeting</h1>
+        <h1>{greeting.greeting + ": "+ greeting.language}</h1>
+
       </main>
       
 
