@@ -44,7 +44,7 @@ export default function Home() {
         
         <h1 className={styles.featuredItem}>Featured Item</h1>
         {item==null&&<h1 className={styles.featuredItem}>No items to feature</h1>}
-        { item != null&&
+        {/* { item != null&&
       
         <table className={styles.table}>
             <thead>
@@ -63,7 +63,7 @@ export default function Home() {
               <td className={styles.td}>{item.phone}</td>
             </tr>
         </table>
-}
+} */}
         
     
       <div className={styles.block}></div>
